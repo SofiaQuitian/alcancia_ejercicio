@@ -1,7 +1,9 @@
 import java.util.Scanner;
+
 //Sofia Quitian Carrillo//
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//EJERCICIO DE ALCANCIA//
+//20/08/2024//
+
 public class Main {
     public static void main(String[] args) {
 
