@@ -1,15 +1,18 @@
 import java.util.Scanner;
-
+//Sofia Quitian Carrillo//
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
         Scanner teclado = new Scanner(System.in);
         int opcion = 0;
+
         System.out.printf("BIENVENIDO A TU ALCANCIA");
         System.out.printf("\nSelecciona una opcion del menu");
 
         while (opcion != 5) {
+
             System.out.printf("\n1- Agregar monedas");
             System.out.printf("\n2- Contar monedas");
             System.out.printf("\n3- Total ahorrado");
@@ -28,7 +31,9 @@ public class Main {
             opcion = teclado.nextInt();
 
             switch (opcion) {
+
                 case 1:
+
                     System.out.printf("Agregar monedas");
                     System.out.printf("\nSeleccione la denominacion a depositar");
                     System.out.printf("\n1- 20");
@@ -36,8 +41,10 @@ public class Main {
                     System.out.printf("\n3- 100");
                     System.out.printf("\n4- 200");
                     System.out.printf("\n5- 500");
+
                     int den;
                     den = teclado.nextInt();
+
                     switch (den) {
                         case 20:
                             mon20++;
@@ -58,6 +65,7 @@ public class Main {
 
                     break;
                 case 2:
+
                     System.out.printf("Contar monedas");
                     System.out.printf("\nLa cantidad de monedas de $20 es: "+ mon20);
                     System.out.printf("\nLa cantidad de monedas de $50 es: "+ mon50);
@@ -66,15 +74,19 @@ public class Main {
                     System.out.printf("\nLa cantidad de monedas de $500 es: "+ mon500);
                     break;
                 case 3:
+
                     System.out.printf("Total ahorrado");
                     break;
                 case 4:
+
                     System.out.printf("Romper alcancia");
                     break;
                 case 5:
+
                     System.out.printf("Saliendo de el programa");
                     break;
                 default:
+
                     System.out.printf("Opcion invalida");
             }
         }
